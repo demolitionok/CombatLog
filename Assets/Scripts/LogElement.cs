@@ -16,6 +16,7 @@ public class LogElement : MonoBehaviour
         Color = Color.magenta;
     }
 
+
     public LogElement(float lifeTime, string text, Color color)
     {
         LifeTime = lifeTime;
