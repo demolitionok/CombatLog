@@ -41,7 +41,7 @@ public class GameController : MonoBehaviour
                 default:
                     throw new NotImplementedException();
             }
-            unit.OnDeath += () => { logController.CreateLogElement($"{unit.Name} пагиб нафиг у него кст был тип{unit.Type}", colorToPaint, lifeTime ); };
+            unit.OnDeath += () => { logController.CreateLogElement(unit.Name,$"{unit.Name} пагиб нафиг у него кст был тип{unit.Type}", colorToPaint, lifeTime ); };
             result.Add(unit);
         }
 
